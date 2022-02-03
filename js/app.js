@@ -18,6 +18,8 @@ btnElement.addEventListener('click', function(evt){
 
 rstElement.addEventListener('click', function(evt){
   lisArr.forEach(element => element.remove());
+  inpElement.value = ''
+  inpElement.focus()
 })
 
 ulElement.addEventListener('click', function(evt){
