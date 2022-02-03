@@ -1,7 +1,14 @@
 const inpElement = document.getElementById('inp')
-// console.log(inpElement)
-const btnElement = document.getElementById('submit-button')
-// console.log(btnElement)
 const ulElement = document.getElementById('todo-list')
-// console.log(ulElement)
+const btnElement = document.getElementById('submit-button')
 
+btnElement.addEventListener('click', function(evt){
+  
+    if (inpElement.value !== '') {
+    const newLi = document.createElement('li');
+    newLi.textContent = inpElement.value;
+    document.querySelector('ul').appendChild(newLi);
+    inpElement.value = ''
+    inpElement.focus()
+  } 
+})
