@@ -26,6 +26,5 @@ ulElement.addEventListener('click', function(evt){
   evt.target.parentNode.removeChild(evt.target)
   let idx = lisArr.indexOf(evt.target)
   lisArr.splice(idx, 1)
-  // console.log('whatver', lisArr), testing new array
 })
 
