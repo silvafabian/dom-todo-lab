@@ -1,0 +1,10 @@
+body {
+  font-size: 25px;
+  text-align: center;
+  margin-top: 150px;
+}
+
+#list{
+  width: 30%;
+  margin: auto;
+}
